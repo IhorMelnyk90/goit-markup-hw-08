@@ -468,6 +468,11 @@ img {
   background-color: var(--fist-text-color);
 }
 
+.mailing__button:hover, .mailing__button:focus {
+  background-color: var(--head-button-hover-backgr);
+  transition: background-color var(--delay-time) var(--cubic-1);
+}
+
 .mailing__button--text {
   padding: 10px 10px 10px 29px;
   font-size: 16px;

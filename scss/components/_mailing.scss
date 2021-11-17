@@ -44,6 +44,12 @@
 
   color: #ffffff;
   background-color: var(--fist-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--head-button-hover-backgr);
+    transition: background-color var(--delay-time) var(--cubic-1);
+  }
 }
 
 .mailing__button--text {
