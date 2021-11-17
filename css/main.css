@@ -228,7 +228,7 @@ img {
   transition: border-color var(--delay-time) var(--cubic-1);
 }
 
-.modal__form--input:focus {
+.modal__form--input:focus, .modal__form--input:hover {
   outline: none;
   border-color: var(--fist-text-color);
   transition: border-color var(--delay-time) var(--cubic-1);
@@ -245,7 +245,8 @@ img {
   transition: fill var(--delay-time) var(--cubic-1);
 }
 
-.modal__form--input:focus + .modal__form--icon {
+.modal__form--input:focus + .modal__form--icon,
+.modal__form--input:hover + .modal__form--icon {
   fill: var(--fist-text-color);
   transition: fill var(--delay-time) var(--cubic-1);
 }
@@ -374,7 +375,7 @@ img {
 }
 
 .join {
-  margin-right: 70px;
+  margin-right: 93px;
 }
 
 .join__title {
@@ -424,7 +425,7 @@ img {
 }
 
 .mailing {
-  margin-right: auto;
+  margin-right: 0;
 }
 
 .mailing__title {
@@ -440,7 +441,7 @@ img {
 .mailing__forms {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .mailing__sending {
@@ -458,7 +459,6 @@ img {
 }
 
 .mailing__button {
-  display: flex;
   height: 50px;
   width: 200px;
   display: flex;
@@ -471,7 +471,7 @@ img {
 .mailing__button--text {
   padding: 10px 10px 10px 29px;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   letter-spacing: 0.06em;
 }
 
@@ -995,7 +995,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   color: var(--third-text-color);
 }
 

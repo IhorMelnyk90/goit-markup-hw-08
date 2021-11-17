@@ -40,7 +40,8 @@
   border-radius: 4px;
   transition: border-color var(--delay-time) var(--cubic-1);
 
-  &:focus {
+  &:focus,
+  &:hover {
     outline: none;
     border-color: var(--fist-text-color);
     transition: border-color var(--delay-time) var(--cubic-1);
@@ -57,7 +58,8 @@
   transform: translateY(-50%);
   transition: fill var(--delay-time) var(--cubic-1);
 
-  .modal__form--input:focus + & {
+  .modal__form--input:focus + &,
+  .modal__form--input:hover + & {
     fill: var(--fist-text-color);
     transition: fill var(--delay-time) var(--cubic-1);
   }
