@@ -57,7 +57,7 @@
   transform: translateY(-50%);
   transition: fill var(--delay-time) var(--cubic-1);
 
-  &:focus + .modal__form--icon {
+  .modal__form--input:focus + & {
     fill: var(--fist-text-color);
     transition: fill var(--delay-time) var(--cubic-1);
   }

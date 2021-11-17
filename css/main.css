@@ -245,7 +245,7 @@ img {
   transition: fill var(--delay-time) var(--cubic-1);
 }
 
-.modal__form--icon:focus + .modal__form--icon {
+.modal__form--input:focus + .modal__form--icon {
   fill: var(--fist-text-color);
   transition: fill var(--delay-time) var(--cubic-1);
 }
