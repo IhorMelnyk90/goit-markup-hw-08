@@ -37,13 +37,13 @@
 
   &:hover,
   &:focus {
-    border-color: var(--fist-text-color);
+    border-color: var(--fisrt-text-color);
     transition: border-color var(--delay-time) var(--cubic-1);
   }
 
   &:hover .clients__icon,
   &:focus .clients__icon {
-    fill: var(--fist-text-color);
+    fill: var(--fisrt-text-color);
     transition: fill var(--delay-time) var(--cubic-1);
   }
 }

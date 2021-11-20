@@ -30,20 +30,22 @@
 
     <header class="header">
       <div class="container header__container">
-        <!--========================Навигация==========================-->
+    <!--========================Навигация==========================-->
 
-        <nav class="navigation">
-          <!--========================Лого==========================-->
+    <nav class="navigation">
+    <!--========================Лого==========================-->
 
-          <a
-            class="header__logo animate__animated animate__zoomIn"
+    <a class="header__logo animate__animated animate__zoomIn"
             href="./index.html"
           >
-            Web<span class="header__logo2">Studio</span></a
-          >
-          <!--========================Меню==========================-->
+            Web<span class="header__logo2">Studio
 
-          <ul class="list menu">
+            </span>
+          </a>
+          
+    <!--========================Меню==========================-->
+
+    <ul class="list menu">
             <li class="menu__item">
               <a class="link menu__link menu__link--current" href="./index.html"
                 >Студия</a
@@ -58,9 +60,9 @@
           </ul>
         </nav>
 
-        <!--========================Контакты==========================-->
+    <!--========================Контакты==========================-->
 
-        <ul class="contacts">
+    <ul class="contacts">
           <li class="contacts__item">
             <a class="link contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16px" height="12px">
@@ -78,24 +80,50 @@
             >
           </li>
         </ul>
+
+<!--========================Кнопка мобильного меню==========================-->
+
+      <button 
+        type="button" 
+        class="burger__btn" 
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+        >
+          <svg 
+            height="40" 
+            width="40" 
+            class="burger__icon" 
+            aria-label="Переключатель мобильного меню">
+            <use class="burger__icon--menu" href='./images/sprite.svg#mobil-menu' ></use>
+            <use class="burger__icon--cross" href='./images/sprite.svg#cross' ></use>
+          </svg>
+        </button>
+<!--========================Мобильное меню==========================-->
+
+        <div class="menu-container" id="menu-container" data-menu>
+          Контент меню
+        </div>
+
+
       </div>
-    </header>
+    </header> 
 
     <main>
-      <!--========================Герой==========================-->
+    <!--========================Герой==========================-->
 
-      <section>
+    <!-- <section>
         <div class="hero">
           <h1 class="hero__banner">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
-      <!--========================Особенности==========================-->
+    <!--========================Особенности==========================-->
 
-      <section class="skills">
+    <!-- <section class="skills">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="skills__list">
@@ -149,11 +177,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--========================Наша работа==========================-->
+    <!--========================Наша работа==========================-->
 
-      <section class="work">
+    <!-- <section class="work">
         <div class="container">
           <h2 class="work__header">Чем мы занимаемся</h2>
           <ul class="work__list">
@@ -177,11 +205,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--========================Наша команда==========================-->
+    <!--========================Наша команда==========================-->
 
-      <section class="team">
+    <!-- <section class="team">
         <div class="container">
           <h2 class="team__header">Наша команда</h2>
           <ul class="team__list">
@@ -335,11 +363,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--========================Постоянные клиенты==========================-->
+    <!--========================Постоянные клиенты==========================-->
 
-      <section class="clients">
+    <!-- <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -388,11 +416,11 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!--========================Футер==========================-->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="info">
           <a class="info__logo" href="./index.html">
@@ -413,11 +441,11 @@
               </li>
             </ul>
           </address>
-        </div>
+        </div> -->
 
-        <!--========================Присоединяйтесь==========================-->
+    <!--========================Присоединяйтесь==========================-->
 
-        <div class="join">
+    <!-- <div class="join">
           <p class="join__title">присоединяйтесь</p>
           <ul class="join__list">
             <li class="join__item">
@@ -449,10 +477,10 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <!--========================Рассылка==========================-->
-        <div class="mailing">
+    <!--========================Рассылка==========================-->
+    <!-- <div class="mailing">
           <p class="mailing__title">Подпишитесь на рассылку</p>
           <div class="mailing__forms">
             <label for="mailing">
@@ -473,10 +501,10 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!--========================Модалка==========================-->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button" data-modal-close>
           <svg class="modal__close--icon" width="18" height="18">
@@ -567,5 +595,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+   -->
+  <script src="./js/menu.js"></script>
   </body>
 </html>

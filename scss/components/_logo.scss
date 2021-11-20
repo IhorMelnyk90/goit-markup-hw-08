@@ -1,31 +1,60 @@
 .header__logo {
   display: block;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
+  margin-right: auto;
+  margin-left: auto;
+
   font-family: Raleway;
+  font-style: normal;
+
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--fist-text-color);
+
+  color: var(--fisrt-text-color);
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo2 {
   color: var(--fifth-color);
 }
 
-.info__logo {
-  display: block;
-  margin-bottom: 20px;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--fist-text-color);
-}
+// =================================Лого в футере============================
 
-.info__logo--part2 {
-  color: var(--third-text-color);
-}
+// .info__logo {
+//   display: block;
+
+//   margin-bottom: 20px;
+
+//   font-family: Raleway;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+
+//   color: var(--fisrt-text-color);
+// }
+
+// .info__logo--part2 {
+//   color: var(--third-text-color);
+// }

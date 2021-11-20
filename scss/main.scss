@@ -1,6 +1,7 @@
 //UTILS
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/breakpoints";
 
 //BASE
 @import "./base/common";
@@ -15,6 +16,7 @@
 @import "./components/social";
 @import "./components/join";
 @import "./components/mailing";
+@import "./components/mobile__menu";
 
 //LAYOUT
 

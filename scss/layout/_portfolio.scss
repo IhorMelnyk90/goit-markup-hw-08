@@ -18,7 +18,7 @@
 
 .filter__button--active {
   padding: 6px 22px;
-  background-color: var(--fist-text-color);
+  background-color: var(--fisrt-text-color);
   color: var(--third-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -41,7 +41,7 @@
   &:hover,
   &:focus {
     color: var(--third-text-color);
-    background-color: var(--fist-text-color);
+    background-color: var(--fisrt-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: color var(--delay-time) var(--cubic-1),
       background-color var(--delay-time) var(--cubic-1),

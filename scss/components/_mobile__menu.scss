@@ -1,0 +1,60 @@
+.burger__btn {
+  @media screen and (max-width: $tablet) {
+    background-color: transparent;
+    align-items: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.burger__icon {
+  align-items: center;
+  fill: var(--fifth-text-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--fisrt-text-color);
+  }
+}
+
+.burger__btn .burger__icon--cross {
+  display: none;
+}
+
+.burger__btn.is-open .burger__icon--menu {
+  display: none;
+}
+
+.burger__btn.is-open .burger__icon--cross {
+  display: block;
+}
+
+.menu-container {
+  @media screen and (max-width: $tablet) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    // background-color: var(--third-text-color);
+    background-color: yellow;
+    color: var(--fifth-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    height: 300px;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
