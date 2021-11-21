@@ -1,7 +1,4 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
   text-align: center;
   margin-top: 0;
   margin-right: auto;
@@ -16,19 +13,40 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (max-width: $desktop) {
+    height: 400px;
+    padding: 118px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
 }
+
 .hero__banner {
-  width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
 
   text-align: center;
   text-transform: uppercase;
-  color: var(--third-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
+  color: var(--third-text-color);
+
+  @media screen and (max-width: $desktop) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__button {
   display: inline-flex;

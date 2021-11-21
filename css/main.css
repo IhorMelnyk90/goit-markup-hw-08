@@ -30,8 +30,12 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--third-text-color);
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 p,
@@ -57,7 +61,7 @@ li {
 }
 
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -174,10 +178,14 @@ img {
 .backdrop {
   width: 100vw;
   height: 100vh;
+  padding-top: 93px;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
+  overflow-y: scroll;
   transition: opacity var(--delay-time) var(--cubic-1), visibility var(--delay-time) var(--cubic-1);
 }
 
@@ -188,16 +196,22 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 584px;
+  max-width: 528px;
+  min-height: 581px;
   padding: 40px;
   background-color: var(--third-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  transition: transform var(--delay-time) var(--cubic-1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform var(--delay-time) var(--cubic-1);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -313,7 +327,7 @@ img {
 .modal__form--accept::before {
   display: block;
   margin-right: 8px;
-  content: "";
+  content: '';
   width: 16px;
   height: 15px;
   border: 1px solid var(--second-text-color);
@@ -689,6 +703,13 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts__item:not(:first-child) {
+    padding-bottom: 21px;
   }
 }
 
@@ -730,9 +751,6 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
   text-align: center;
   margin-top: 0;
   margin-right: auto;
@@ -745,17 +763,45 @@ img {
   background-position: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .hero {
+    height: 400px;
+    padding: 118px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
+}
+
 .hero__banner {
-  width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--third-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
+  color: var(--third-text-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__banner {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__banner {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {

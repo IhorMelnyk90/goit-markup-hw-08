@@ -1,6 +1,10 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--third-text-color);
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 p,
@@ -25,7 +29,7 @@ li {
 }
 
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
   border: none;
   border-radius: 4px;

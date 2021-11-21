@@ -13,6 +13,8 @@
     position: relative;
   }
 }
+
+// /*---------------------------Меню навигации---------------------------*/
 .navigation {
   display: flex;
   align-items: center;
@@ -105,6 +107,12 @@
 .contacts__item:not(:last-child) {
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     margin-bottom: 10px;
+    padding-top: 21px;
+  }
+}
+.contacts__item:not(:first-child) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    padding-bottom: 21px;
   }
 }
 
