@@ -55,4 +55,9 @@
 
 .modal__close--icon {
   fill: var(--fifth-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--fisrt-text-color);
+  }
 }

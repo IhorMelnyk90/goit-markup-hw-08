@@ -235,6 +235,10 @@ img {
   fill: var(--fifth-color);
 }
 
+.modal__close--icon:hover, .modal__close--icon:focus {
+  fill: var(--fisrt-text-color);
+}
+
 .modal__form {
   display: flex;
   flex-direction: column;
