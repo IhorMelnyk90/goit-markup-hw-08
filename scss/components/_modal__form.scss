@@ -2,15 +2,27 @@
   display: flex;
   flex-direction: column;
 }
+
 .modal__form--head {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: 700;
-  line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+
+  @media screen and (max-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 370px;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
+
 .modal__form--field {
   font-size: 12px;
   font-weight: 400;
@@ -89,11 +101,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: var(--general-text-color);
+
+  @media screen and (max-width: $desktop) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &::before {
     display: block;

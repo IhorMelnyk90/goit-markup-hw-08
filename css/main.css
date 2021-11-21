@@ -181,12 +181,12 @@ img {
   padding-top: 93px;
   padding-right: 15px;
   padding-left: 15px;
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
   overflow-y: scroll;
   transition: opacity var(--delay-time) var(--cubic-1), visibility var(--delay-time) var(--cubic-1);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .backdrop.is-hidden {
@@ -197,6 +197,7 @@ img {
 .modal {
   position: absolute;
   max-width: 528px;
+  width: calc(100%-30px);
   min-height: 581px;
   padding: 40px;
   background-color: var(--third-text-color);
@@ -205,9 +206,20 @@ img {
   transition: transform var(--delay-time) var(--cubic-1);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    height: 581px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
@@ -220,7 +232,7 @@ img {
 }
 
 .modal__close--icon {
-  fill: currentColor;
+  fill: var(--fifth-color);
 }
 
 .modal__form {
@@ -232,10 +244,24 @@ img {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: 700;
-  line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .modal__form--head {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 370px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form--head {
+    line-height: 1.15;
+  }
 }
 
 .modal__form--field {
@@ -317,11 +343,23 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: var(--general-text-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .modal__form--accept {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form--accept {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__form--accept::before {
