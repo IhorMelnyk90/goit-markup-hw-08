@@ -24,28 +24,19 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
-
   <body>
-    <!--========================Хедер==========================-->
-
+    <!--========================Хедер START=========================-->
     <header class="header">
       <div class="container header__container">
-    <!--========================Навигация==========================-->
-
-    <nav class="navigation">
-    <!--========================Лого==========================-->
-
-    <a class="header__logo animate__animated animate__zoomIn"
+        <!--==================Лого и навигация START================-->
+        <nav class="navigation">
+          <a
+            class="header__logo animate__animated animate__zoomIn"
             href="./index.html"
           >
-            Web<span class="header__logo2">Studio
-
-            </span>
+            Web<span class="header__logo2">Studio </span>
           </a>
-          
-    <!--========================Меню==========================-->
-
-    <ul class="list menu">
+          <ul class="list menu">
             <li class="menu__item">
               <a class="link menu__link menu__link--current" href="./index.html"
                 >Студия</a
@@ -59,10 +50,9 @@
             </li>
           </ul>
         </nav>
-
-    <!--========================Контакты==========================-->
-
-    <ul class="contacts">
+        <!--=================Лого и навигация END===================-->
+        <!--==================Контакты START========================-->
+        <ul class="contacts">
           <li class="contacts__item">
             <a class="link contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16px" height="12px">
@@ -80,39 +70,93 @@
             >
           </li>
         </ul>
-
-<!--========================Кнопка мобильного меню==========================-->
-
-      <button 
-        type="button" 
-        class="burger__btn" 
-        aria-expanded="false"
-        aria-controls="menu-container"
-        data-menu-button
-        >
-          <svg 
-            height="40" 
-            width="40" 
-            class="burger__icon" 
-            aria-label="Переключатель мобильного меню">
-            <use class="burger__icon--menu" href='./images/sprite.svg#mobil-menu' ></use>
-            <use class="burger__icon--cross" href='./images/sprite.svg#cross' ></use>
+        <!--===================Контакты END=========================-->
+        <!--===================Мобильное меню=======================-->
+        <button class="burger__btn--open mob-menu--open" type="button">
+          <svg height="40" width="40" class="burger__icon">
+            <use href="./images/sprite.svg#mobil-menu"></use>
           </svg>
         </button>
-<!--========================Мобильное меню==========================-->
-
-        <div class="menu-container" id="menu-container" data-menu>
-          Контент меню
+        <div class="menu__container is-open mob-menu" id="menu-container">
+          <div class="mobmenu__container">
+            <button type="button" class="burger__btn--cross mob-menu--close">
+              <svg class="burger__icon--cross" height="40" width="40">
+                <use href="./images/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="mobile__menu">
+              <div class="mobile__menu--nav">
+                <ul class="mobile__menu--nav-list list">
+                  <li class="mobile__menu--nav-item">
+                    <a
+                      href="./index.html"
+                      class="mobile__menu--nav-link mobile__menu--current link"
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="mobile__menu--nav-item">
+                    <a
+                      href="./portfolio.html"
+                      class="mobile__menu--nav-link link"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="mobile__menu--nav-item">
+                    <a href="#" class="mobile__menu--nav-link link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mobile__menu--contact">
+                <ul class="mobile__menu--contact-list list">
+                  <li class="mobile__menu--contact-item">
+                    <a
+                      href="tel:+380961111111"
+                      class="mobile__menu--contact-link current"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mobile__menu--contact-item">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="mobile__menu--contact-link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mobile__menu--socials">
+                  <li class="mobile__menu--socials-item">
+                    <a href="#" class="mobile__menu--socials-link link"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="mobile__menu--socials-item">
+                    <a href="#" class="mobile__menu--socials-link link"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="mobile__menu--socials-item">
+                    <a href="#" class="mobile__menu--socials-link link"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="mobile__menu--socials-item">
+                    <a href="#" class="mobile__menu--socials-link link"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+        <!--==================Мобильное меню END====================-->
       </div>
-    </header> 
-
+    </header>
+    <!--========================Хедер END===========================-->
+    <!--========================Мейн START==========================-->
     <main>
-    <!--========================Герой==========================-->
-
-    <section>
+      <!--========================Герой START==========================-->
+      <section>
         <div class="hero">
           <h1 class="hero__banner">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__button" type="button" data-modal-open>
@@ -120,10 +164,9 @@
           </button>
         </div>
       </section>
-
-    <!--========================Особенности==========================-->
-
-    <!-- <section class="skills">
+      <!--========================Герой END==========================-->
+      <!--========================Особенности==========================-->
+      <!-- <section class="skills">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="skills__list">
@@ -178,10 +221,8 @@
           </ul>
         </div>
       </section> -->
-
-    <!--========================Наша работа==========================-->
-
-    <!-- <section class="work">
+      <!--========================Наша работа==========================-->
+      <!-- <section class="work">
         <div class="container">
           <h2 class="work__header">Чем мы занимаемся</h2>
           <ul class="work__list">
@@ -206,10 +247,8 @@
           </ul>
         </div>
       </section> -->
-
-    <!--========================Наша команда==========================-->
-
-    <!-- <section class="team">
+      <!--========================Наша команда==========================-->
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team__header">Наша команда</h2>
           <ul class="team__list">
@@ -364,10 +403,8 @@
           </ul>
         </div>
       </section> -->
-
-    <!--========================Постоянные клиенты==========================-->
-
-    <!-- <section class="clients">
+      <!--========================Постоянные клиенты==========================-->
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -415,13 +452,12 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main> -->
-
-    <!--========================Футер==========================-->
-
-    <!-- <footer class="footer">
-      <div class="container footer__container">
+      </section>-->
+    </main>
+    <!--========================Мейн END============================-->
+    <!--=======================Футер START==========================-->
+    <footer class="footer">
+      <!-- <div class="container footer__container">
         <div class="info">
           <a class="info__logo" href="./index.html">
             Web<span class="info__logo--part2">Studio</span></a
@@ -442,10 +478,8 @@
             </ul>
           </address>
         </div> -->
-
-    <!--========================Присоединяйтесь==========================-->
-
-    <!-- <div class="join">
+      <!--====================Присоединяйтесь========================-->
+      <!-- <div class="join">
           <p class="join__title">присоединяйтесь</p>
           <ul class="join__list">
             <li class="join__item">
@@ -478,9 +512,8 @@
             </li>
           </ul>
         </div> -->
-
-    <!--========================Рассылка==========================-->
-    <!-- <div class="mailing">
+      <!--========================Рассылка==========================-->
+      <!-- <div class="mailing">
           <p class="mailing__title">Подпишитесь на рассылку</p>
           <div class="mailing__forms">
             <label for="mailing">
@@ -500,10 +533,10 @@
             </button>
           </div>
         </div>
-      </div>
-    </footer> -->
-    <!--========================Модалка==========================-->
-
+      </div>-->
+    </footer>
+    <!--=======================Футер END===========================-->
+    <!--======================Модалка  START=======================-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button" data-modal-close>
@@ -511,12 +544,10 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-
         <form action="#" class="modal__form">
           <p class="modal__form--head">
             Оставьте свои данные, мы вам перезвоним
           </p>
-
           <label for="user-name" class="modal__form--field margin"
             >Имя
             <span class="modal__form--wraper">
@@ -535,7 +566,6 @@
               </svg>
             </span>
           </label>
-
           <label for="user-tell" class="modal__form--field margin"
             >Телефон
             <span class="modal__form--wraper">
@@ -552,7 +582,6 @@
               </svg>
             </span>
           </label>
-
           <label for="user-email" class="modal__form--field margin"
             >Почта
             <span class="modal__form--wraper">
@@ -567,7 +596,6 @@
               </svg>
             </span>
           </label>
-
           <label for="user-messege" class="modal__form--field margin--2"
             >Комментарий
             <textarea
@@ -577,7 +605,6 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-
           <input
             type="checkbox"
             id="accept-policy"
@@ -587,15 +614,16 @@
             >Соглашаюсь с рассылкой и принимаю&nbsp;
             <a href="#" class="modal__form--acceptlink">Условия договора</a>
           </label>
-
           <button class="modal__form--sendbutton button" type="submit">
             Отправить
           </button>
         </form>
       </div>
     </div>
+    <!--=======================Модалка END=========================-->
+    <!--======================Скрипты  START=======================-->
     <script src="./js/modal.js"></script>
-  
     <script src="./js/menu.js"></script>
+    <!--=======================Скрипты END=========================-->
   </body>
 </html>
