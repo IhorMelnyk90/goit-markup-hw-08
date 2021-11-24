@@ -26,24 +26,18 @@
   </head>
 
   <body>
-    <!--========================Хедер==========================-->
-
-    <!-- <header class="header">
-      <div class="container header__container"> -->
-    <!--========================Навигация==========================-->
-
-    <!-- <nav class="navigation"> -->
-    <!--========================Лого==========================-->
-
-    <!-- <a
+    <!--===========================Хедер START===========================-->
+    <header class="header">
+      <div class="container header__container">
+        <!--==================Лого и навигация START================-->
+        <nav class="navigation">
+          <a
             class="header__logo animate__animated animate__zoomIn"
             href="./index.html"
           >
-            Web<span class="header__logo2">Studio</span></a
-          > -->
-    <!--========================Меню==========================-->
-
-    <!-- <ul class="list menu">
+            Web<span class="header__logo2">Studio </span>
+          </a>
+          <ul class="list menu">
             <li class="menu__item">
               <a class="link menu__link" href="./index.html">Студия</a>
             </li>
@@ -58,9 +52,10 @@
               <a class="link menu__link" href="#">Контакты</a>
             </li>
           </ul>
-        </nav> -->
-    <!--========================Контакты==========================-->
-    <!-- <ul class="contacts">
+        </nav>
+        <!--=================Лого и навигация END===================-->
+        <!--==================Контакты START========================-->
+        <ul class="contacts">
           <li class="contacts__item">
             <a class="link contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16px" height="12px">
@@ -78,15 +73,96 @@
             >
           </li>
         </ul>
+        <!--===================Контакты END=========================-->
+        <!--===================Мобильное меню=======================-->
+        <button class="burger__btn--open mob-menu--open" type="button">
+          <svg height="40" width="40" class="burger__icon">
+            <use href="./images/sprite.svg#mobil-menu"></use>
+          </svg>
+        </button>
+        <div class="menu__container is-open mob-menu" id="menu-container">
+          <div class="mobmenu__container">
+            <button type="button" class="burger__btn--cross mob-menu--close">
+              <svg class="burger__icon--cross" height="40" width="40">
+                <use href="./images/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="mobile__menu">
+              <div class="mobile__menu--nav">
+                <ul class="mobile__menu--nav-list list">
+                  <li class="mobile__menu--nav-item">
+                    <a href="./index.html" class="mobile__menu--nav-link"
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="mobile__menu--nav-item">
+                    <a
+                      href="./portfolio.html"
+                      class="
+                        mobile__menu--nav-link mobile__menu--current
+                        link link
+                      "
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="mobile__menu--nav-item">
+                    <a href="#" class="mobile__menu--nav-link link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mobile__menu--contact">
+                <ul class="mobile__menu--contact-list list">
+                  <li class="mobile__menu--contact-item">
+                    <a
+                      href="tel:+380961111111"
+                      class="mobile__menu--contact-link current"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mobile__menu--contact-item">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="mobile__menu--contact-link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mobile__menu--socials">
+                  <li class="mobile__menu--socials-item">
+                    <a href="#" class="mobile__menu--socials-link link"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="mobile__menu--socials-item">
+                    <a href="#" class="mobile__menu--socials-link link"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="mobile__menu--socials-item">
+                    <a href="#" class="mobile__menu--socials-link link"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="mobile__menu--socials-item">
+                    <a href="#" class="mobile__menu--socials-link link"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--==================Мобильное меню END====================-->
       </div>
-    </header> -->
-    <!--========================Портфолио==========================-->
-    <!-- <main>
+    </header>
+    <!--===========================Хедер END=============================-->
+    <!--==========================Мейн START=============================-->
+    <main>
       <section class="portfolio">
-        <div class="container"> -->
-    <!--========================Фильтр работ==========================-->
-    <!-- <h1 class="visually-hidden">Портфолио</h1>
-
+        <div class="container">
+          <!--===================Фильтр работ START======================-->
+          <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter">
             <li class="filter__item">
               <button
@@ -116,15 +192,61 @@
                 Маркетинг
               </button>
             </li>
-          </ul> -->
-
-    <!--========================Портфолио==========================-->
-
-    <!-- <ul class="portfolio__list">
+          </ul>
+          <!--====================Фильтр работ END=======================-->
+          <!--====================Портфолио START========================-->
+          <ul class="portfolio__list">
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img src="./images/prj1.jpg" alt="Технокряк" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-1-desktop.webp    1x,
+                        ./images/projects/project-1-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-1-desktop.jpg    1x,
+                        ./images/projects/project-1-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-1-tablet.webp    1x,
+                        ./images/projects/project-1-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-1-tablet.jpg    1x,
+                        ./images/projects/project-1-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-1.webp    1x,
+                        ./images/projects/project-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-1.jpg    1x,
+                        ./images/projects/project-1@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Пример веб-сайта" loading="lazy" />
+                  </picture>
                   <p class="portfolio__img--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -140,11 +262,58 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img
-                    src="./images/prj2.jpg"
-                    width="370"
-                    alt="New Orlean vs Golden Star"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-2-desktop.webp    1x,
+                        ./images/projects/project-2-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-2-desktop.jpg    1x,
+                        ./images/projects/project-2-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-2-tablet.webp    1x,
+                        ./images/projects/project-2-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-2-tablet.jpg    1x,
+                        ./images/projects/project-2-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-2.webp    1x,
+                        ./images/projects/project-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-2.jpg    1x,
+                        ./images/projects/project-2@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="Постер с баскетболистами"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__img--text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi amet similique aspernatur unde sequi sint tenetur
@@ -163,11 +332,58 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img
-                    src="./images/prj3.jpg"
-                    width="370"
-                    alt="Ресторан Seafood"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-3-desktop.webp    1x,
+                        ./images/projects/project-3-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-3-desktop.jpg    1x,
+                        ./images/projects/project-3-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-3-tablet.webp    1x,
+                        ./images/projects/project-3-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-3-tablet.jpg    1x,
+                        ./images/projects/project-3-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-3.webp    1x,
+                        ./images/projects/project-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-3.jpg    1x,
+                        ./images/projects/project-3@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="Логотип ресторана морепродуктов"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__img--text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi amet similique aspernatur unde sequi sint tenetur
@@ -184,7 +400,54 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img src="./images/prj4.jpg" width="370" alt="Проект Prime" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-4-desktop.webp    1x,
+                        ./images/projects/project-4-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-4-desktop.jpg    1x,
+                        ./images/projects/project-4-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-4-tablet.webp    1x,
+                        ./images/projects/project-4-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-4-tablet.jpg    1x,
+                        ./images/projects/project-4-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-4.webp    1x,
+                        ./images/projects/project-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-4.jpg    1x,
+                        ./images/projects/project-4@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Наушники" loading="lazy" />
+                  </picture>
                   <p class="portfolio__img--text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi amet similique aspernatur unde sequi sint tenetur
@@ -201,7 +464,54 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img src="./images/prj5.jpg" width="370" alt="Проект Boxes" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-5-desktop.webp    1x,
+                        ./images/projects/project-5-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-5-desktop.jpg    1x,
+                        ./images/projects/project-5-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-5-tablet.webp    1x,
+                        ./images/projects/project-5-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-5-tablet.jpg    1x,
+                        ./images/projects/project-5-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-5.webp    1x,
+                        ./images/projects/project-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-5.jpg    1x,
+                        ./images/projects/project-5@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Различные коробки" loading="lazy" />
+                  </picture>
                   <p class="portfolio__img--text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi amet similique aspernatur unde sequi sint tenetur
@@ -218,11 +528,54 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img
-                    src="./images/prj6.jpg"
-                    width="370"
-                    alt="Inspiration has no Borders"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-6-desktop.webp    1x,
+                        ./images/projects/project-6-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-6-desktop.jpg    1x,
+                        ./images/projects/project-6-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-6-tablet.webp    1x,
+                        ./images/projects/project-6-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-6-tablet.jpg    1x,
+                        ./images/projects/project-6-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-6.webp    1x,
+                        ./images/projects/project-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-6.jpg    1x,
+                        ./images/projects/project-6@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Монитор" loading="lazy" />
+                  </picture>
                   <p class="portfolio__img--text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi amet similique aspernatur unde sequi sint tenetur
@@ -239,11 +592,54 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img
-                    src="./images/prj7.jpg"
-                    width="370"
-                    alt="Издание Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-7-desktop.webp    1x,
+                        ./images/projects/project-7-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-7-desktop.jpg    1x,
+                        ./images/projects/project-7-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-7-tablet.webp    1x,
+                        ./images/projects/project-7-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-7-tablet.jpg    1x,
+                        ./images/projects/project-7-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-7.webp    1x,
+                        ./images/projects/project-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-7.jpg    1x,
+                        ./images/projects/project-7@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Разворот книги" loading="lazy" />
+                  </picture>
                   <p class="portfolio__img--text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi amet similique aspernatur unde sequi sint tenetur
@@ -260,7 +656,58 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img src="./images/prj8.jpg" width="370" alt="Проект LAB" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-8-desktop.webp    1x,
+                        ./images/projects/project-8-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-8-desktop.jpg    1x,
+                        ./images/projects/project-8-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-8-tablet.webp    1x,
+                        ./images/projects/project-8-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-8-tablet.jpg    1x,
+                        ./images/projects/project-8-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-8.webp    1x,
+                        ./images/projects/project-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-8.jpg    1x,
+                        ./images/projects/project-8@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="Ярлык с названием компании"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="portfolio__img--text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi amet similique aspernatur unde sequi sint tenetur
@@ -277,11 +724,54 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__link--wrap">
-                  <img
-                    src="./images/prj9.jpg"
-                    width="370"
-                    alt="Growing Business"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-9-desktop.webp    1x,
+                        ./images/projects/project-9-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/project-9-desktop.jpg    1x,
+                        ./images/projects/project-9-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-9-tablet.webp    1x,
+                        ./images/projects/project-9-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/project-9-tablet.jpg    1x,
+                        ./images/projects/project-9-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-9.webp    1x,
+                        ./images/projects/project-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/projects/project-9.jpg    1x,
+                        ./images/projects/project-9@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Ноутбук" loading="lazy" />
+                  </picture>
                   <p class="portfolio__img--text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi amet similique aspernatur unde sequi sint tenetur
@@ -296,12 +786,13 @@
               </a>
             </li>
           </ul>
+          <!--=====================Портфолио END=========================-->
         </div>
       </section>
-    </main> -->
-    <!--========================Футер==========================-->
-
-    <!-- <footer class="footer">
+    </main>
+    <!--===========================Мейн END==============================-->
+    <!--=========================Футер START=============================-->
+    <footer class="footer">
       <div class="container footer__container">
         <div class="info">
           <a class="info__logo" href="./index.html">
@@ -322,11 +813,8 @@
               </li>
             </ul>
           </address>
-        </div> -->
-
-    <!--========================Присоединяйтесь==========================-->
-
-    <!-- <div class="join">
+        </div>
+        <div class="join">
           <p class="join__title">присоединяйтесь</p>
           <ul class="join__list">
             <li class="join__item">
@@ -358,10 +846,8 @@
               </a>
             </li>
           </ul>
-        </div> -->
-
-    <!--========================Рассылка==========================-->
-    <!-- <div class="mailing">
+        </div>
+        <div class="mailing">
           <p class="mailing__title">Подпишитесь на рассылку</p>
           <div class="mailing__forms">
             <label for="mailing">
@@ -383,7 +869,9 @@
         </div>
       </div>
     </footer>
-  </body>
-</html> -->
+    <!--==========================Футер END=============================-->
+    <!--======================Скрипты  START=======================-->
+    <script src="./js/menu.js"></script>
+    <!--=======================Скрипты END=========================-->
   </body>
 </html>
