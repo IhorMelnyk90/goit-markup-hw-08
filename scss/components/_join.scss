@@ -1,8 +1,9 @@
 .join {
-  margin-right: 93px;
+  display: inline-block;
 }
 
 .join__title {
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -10,10 +11,19 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--third-text-color);
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .join__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 0px;
+  }
 }
 
 .join__item {

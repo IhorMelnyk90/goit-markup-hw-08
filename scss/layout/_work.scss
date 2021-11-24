@@ -1,5 +1,10 @@
 .work {
-  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
 }
 
 .work__header {
