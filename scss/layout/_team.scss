@@ -50,7 +50,10 @@
 
 .team__text {
   padding-top: 30px;
+  padding-right: 32px;
   padding-bottom: 30px;
+  padding-left: 32px;
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 30px;
   }

@@ -1,5 +1,9 @@
 .join {
   display: inline-block;
+  padding-bottom: 60px;
+  @media screen and(min-width: $desktop) {
+    padding-bottom: 0px;
+  }
 }
 
 .join__title {
@@ -20,10 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
-  @media screen and(min-width: $desktop) {
-    margin-bottom: 0px;
-  }
 }
 
 .join__item {

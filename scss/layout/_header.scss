@@ -107,10 +107,14 @@
 .contacts__item:not(:last-child) {
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     margin-bottom: 10px;
+  }
+}
+.contacts__link:not(:last-child) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     padding-top: 21px;
   }
 }
-.contacts__item:not(:first-child) {
+.contacts__link:not(:first-child) {
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     padding-bottom: 21px;
   }

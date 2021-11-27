@@ -98,32 +98,34 @@
 }
 
 .modal__form--accept {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  padding-left: 24px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: var(--general-text-color);
 
-  @media screen and (max-width: $desktop) {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-
   &::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
     display: block;
-    margin-right: 8px;
+    margin-right: 7px;
     content: '';
     width: 16px;
     height: 15px;
     border: 1px solid var(--second-text-color);
     cursor: pointer;
     border-radius: 2px;
+  }
+  @media screen and(min-width: $mobile) {
+    top: 0;
+  }
+  @media screen and(min-width: $desktop) {
+    // position: static;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -142,8 +144,7 @@
   }
 }
 
-.modal__form--acceptlink:hover,
-.modal__form--acceptlink:focus {
+.modal__form--acceptlink {
   color: var(--fisrt-text-color);
   text-decoration-line: underline;
 }
